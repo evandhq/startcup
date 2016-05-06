@@ -1,0 +1,23 @@
+@import './../../themes/_variables.scss';
+
+$btn-color: #E72E29;
+
+:local(.container) {
+  margin: 30px 0;
+  lost-center: $container-width;
+}
+
+:local(.wrapper) {
+  background-color: #ECF0F1;
+  padding: 30px 0;
+}
+
+@media(min-width: 900px) {
+  :local(.colUpcoming) {
+    lost-column: 7/12;
+  }
+
+  :local(.colTable) {
+    lost-column: 5/12;
+  }
+}

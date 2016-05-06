@@ -1,0 +1,35 @@
+@import './../../themes/_variables.scss';
+
+:local(.container) {
+  lost-center: $container-width;
+  padding: 15px 0;
+}
+
+:local(.wrapper) {
+  background: url('../../images/jumbotron.jpg') center center;
+  height: 500px;
+  -webkit-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 160px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  background-blend-mode: multiply;
+  animation: jumboAnimation 1s ease-in-out 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  h1 {
+    font-size: 3em;
+    text-shadow: 0 0 10px #000;
+  }
+}
+
+@keyframes jumboAnimation {
+  from {
+    background-color: #fff;
+  }
+
+  to {
+    background-color: #bbb;
+  }
+}

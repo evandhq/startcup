@@ -1,0 +1,65 @@
+@import './../../themes/_variables.scss';
+
+.wrapper {
+  height: 275px;
+  overflow: auto;
+  .items {
+    .item {
+      lost-utility: clearfix;
+
+      &:nth-child(2n) {
+        background-color: #F3F3F3;
+
+        :local(.date) {
+          background-color: #2C3E50;
+        }
+      }
+
+      &:nth-child(2n + 1) {
+        background-color: #F9F9F9;
+
+        :local(.date) {
+          background-color: #34495E;
+        }
+      }
+
+      :local(.team) {
+        padding: 10px;
+        lost-column: 7/20 0 0;
+        line-height: 34px;
+
+        :local(.logo) {
+          width: 34px;
+          height: 34px;
+          border-radius: 50%;
+        }
+
+        &:first-child {
+          text-align: left;
+
+          :local(.logo) {
+            float: left;
+            margin-right: 10px;
+          }
+        }
+
+        &:last-child {
+          text-align: right;
+
+          :local(.logo) {
+            float: right;
+            margin-left: 10px;
+          }
+        }
+      }
+
+      :local(.date) {
+        padding: 10px;
+        lost-column: 6/20 0 0;
+        text-align: center;
+        line-height: 34px;
+        color: #ffffff;
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+@import './../../themes/_variables.scss';
+
+:local(.upcomingGame) {
+  :local(.team) {
+    lost-column: 2/5 0 0;
+    background: url('../../images/jumbotron.jpg') center center;
+    background-size: cover;
+
+    :local(.logo) {
+      width: 100%;
+      height: 275px;
+      lost-align: middle-center;
+
+      img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  :local(.info) {
+    lost-column: 1/5 0 0;
+
+    :local(.matchNumber) {
+      text-align: center;
+      background-color: #2C3E50;
+      color: #ffffff;
+      line-height: 50px;
+    }
+
+    :local(.result) {
+      height: 175px;
+      lost-align: middle-center;
+      text-align: center;
+      background-color: #ffffff;
+
+      > div {
+        font-size: 3em;
+      }
+    }
+  }
+}

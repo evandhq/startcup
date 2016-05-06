@@ -1,0 +1,50 @@
+@import './../../themes/_variables.scss';
+
+:local(.container) {
+  lost-center: $container-width;
+  padding: 10px 0;
+}
+
+:local(.wrapper) {
+  background-color: rgba(255, 255, 255, 0.95);
+  lost-utility: clearfix;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+}
+
+:local(.logo) {
+  text-align: center;
+  float: left;
+
+  img {
+    height: 40px;
+  }
+}
+
+:local(.nav) {
+  float: right;
+
+  ul {
+    padding: 0;
+    margin: 0;
+    display: block;
+    list-style: none;
+    text-align: center;
+
+    li {
+      display: inline-block;
+      margin: 0 15px;
+      height: 40px;
+
+      a {
+        color: #333;
+        font-weight: bold;
+        line-height: 40px;
+      }
+    }
+  }
+}

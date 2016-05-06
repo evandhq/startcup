@@ -1,0 +1,25 @@
+@import './../../themes/_variables.scss';
+$btn-color: #E72E29;
+
+:local(.container) {
+  margin: 60px 0;
+  lost-center: 960px;
+  text-align: center;
+
+}
+
+:local(.signUp) {
+  background-color: $btn-color;
+  color: #ffffff;
+  padding: 10px;
+  margin-top: 15px;
+  display: inline-block;
+
+  &, &:hover {
+    transition: background-color .3s ease;
+  }
+
+  &:hover {
+    background-color: color($btn-color w(30%));
+  }
+}

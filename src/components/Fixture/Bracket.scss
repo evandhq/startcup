@@ -1,0 +1,112 @@
+@import './../../themes/_variables.scss';
+
+.tournament {
+  position: relative;
+  min-height: 300px;
+  direction: ltr;
+}
+
+.grid {
+  font-size: 0;
+  line-height: 0;
+  display: flex;
+  align-items: stretch;
+  min-height: 400px;
+}
+
+.round {
+  position: relative;
+  flex: 1 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.match {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0;
+  align-items: center;
+  min-height: $tournament-match-min-height;
+
+  &:first-child {
+    margin: 0 !important;
+  }
+
+  .firstRound & {
+    padding-left: 0;
+  }
+
+  .winner & {
+    padding-right: 0;
+    height: $tournament-grid-comand-height;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 2px;
+    background: $tournament-grid-line-color;
+    top: 25%;
+    bottom: 25%;
+
+    .winner &,
+    .endPoint & {
+      display: none;
+    }
+  }
+}
+
+.team {
+  font-size: 14px;
+  font-weight: bold;
+  transition: color .3s ease;
+  color: #FFFFFF;
+  text-decoration: none;
+
+  &:focus,
+  &:hover {
+    color: #EEE;
+  }
+
+  box-sizing: border-box;
+  background: $tournament-grid-comand-bd-color;
+  display: block;
+  position: relative;
+  width: $tournament-grid-comand-width;
+  height: $tournament-grid-comand-height;
+  line-height: $tournament-grid-comand-height;
+  padding: 0 $team-icon-spacing 0 $team-icon-spacing;
+  margin: auto;
+
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 999px;
+    height: 2px;
+    margin-top: -1px;
+    background: $tournament-grid-line-color;
+  }
+
+  &:after {
+    left: 100%;
+
+    .round:last-child &,
+    .endPoint & {
+      display: none;
+    }
+  }
+
+  &:before {
+    right: 100%;
+
+    .round:first-child & {
+      display: none;
+    }
+  }
+}

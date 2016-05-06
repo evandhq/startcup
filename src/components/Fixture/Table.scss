@@ -1,0 +1,41 @@
+:local(.leagueTable) {
+  width: 100%;
+  border-collapse: collapse;
+
+  img {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+  }
+
+  th:nth-child(3) {
+    text-align: right;
+  }
+
+  tbody {
+    background-color: #34495E;
+    tr {
+      &:nth-child(2n) {
+        background-color: #2C3E50;
+      }
+
+      td {
+        color: #ffffff;
+        padding: 10px 0;
+
+        &:not(:nth-child(3)) {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  thead {
+    background-color: #27AE60;
+
+    th {
+      color: #ffffff;
+      padding: 10px 0;
+    }
+  }
+}
