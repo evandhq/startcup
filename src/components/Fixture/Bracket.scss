@@ -41,7 +41,7 @@
 
   .winner & {
     padding-right: 0;
-    height: $tournament-grid-comand-height;
+    height: $tournament-grid-height;
   }
 
   &:after {
@@ -73,12 +73,12 @@
   }
 
   box-sizing: border-box;
-  background: $tournament-grid-comand-bd-color;
+  background: $tournament-grid-bd-color;
   display: block;
   position: relative;
-  width: $tournament-grid-comand-width;
-  height: $tournament-grid-comand-height;
-  line-height: $tournament-grid-comand-height;
+  width: $tournament-grid-width;
+  height: $tournament-grid-height;
+  line-height: $tournament-grid-height;
   padding: 0 $team-icon-spacing 0 $team-icon-spacing;
   margin: auto;
 
