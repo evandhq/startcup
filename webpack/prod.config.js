@@ -35,10 +35,20 @@ module.exports = {
         loader: 'file?name=[name].[ext]'
       },
       {
+        test: /\.png|\.jpg$/,
+        loader: 'url'
+      },
+      {
         test: /\.scss$/,
-        loader: ExtractTextPlugin.extract('style', 'css?modules&importLoaders=2&sourceMap!autoprefixer?browsers=last 2 version!sass?outputStyle=expanded&sourceMap=true&sourceMapContents=true')
+        loader: ExtractTextPlugin.extract('style', 'css?modules&importLoaders=2&sourceMap&localIdentName=[local]___[hash:base64:5]!postcss-loader')
       }
     ]
+  },
+  postcss: function () {
+    return {
+      defaults: [require('precss'), require('lost'), require('postcss-color-function')],
+      cleaner: []
+    };
   },
   output: {
     path: assetsPath,
