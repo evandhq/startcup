@@ -15,7 +15,7 @@ app.use(express.static(`${__dirname}/../static`));
 
 const assets = {
   styles: [
-    'http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'
+    'https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'
   ],
   scripts: [
     process.env.NODE_ENV === 'development' ?
