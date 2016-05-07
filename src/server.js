@@ -2,10 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom/server';
 import Html from 'components/Html/Html';
 import express from 'express';
+import bodyParser from 'body-parser';
+import registerApiRoutes from 'api';
 import { port } from 'config';
 
 const app = express();
 app.disable('x-powered-by');
+
+app.use(bodyParser.json());
+registerApiRoutes(app);
+app.use(express.static(`${__dirname}/../static`));
 
 const assets = {
   styles: [
@@ -21,8 +27,6 @@ const assets = {
 if (process.env.NODE_ENV === 'production') {
   assets.styles.push('/dist/main.css');
 }
-
-app.use(express.static(`${__dirname}/../static`));
 
 app.use((req, res) => {
   const element = <Html assets={assets}/>;

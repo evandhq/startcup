@@ -7,18 +7,18 @@ export default class Game extends Component {
       <div className={styles.upcomingGame}>
         <div className={styles.team}>
           <div className={styles.logo}>
-            <img src={require('../../images/teams/anetwork.png')} alt=""/>
+            <img src={require('../../images/teams/evand.jpg')} alt=""/>
           </div>
         </div>
         <div className={styles.info}>
           <div className={styles.matchNumber}>
-            بازی ۶
+            بازی ۱
           </div>
           <div className={styles.result}>
-            <div>12:1</div>
+            <div>VS</div>
           </div>
           <div className={styles.matchNumber}>
-            ۱۰ خرداد ۹۴
+            نامشخص
           </div>
         </div>
         <div className={styles.team}>

@@ -10,8 +10,8 @@ export default class Navbar extends Component {
         </div>
         <nav className={styles.nav}>
           <ul>
-            <li><a href="#">ثبت نام در جام</a></li>
-            <li><a href="#">یکی منو توجیه کنه</a></li>
+            <li><a href="#register">ثبت نام در جام</a></li>
+            <li><a href="#about">یکی منو توجیه کنه</a></li>
           </ul>
         </nav>
       </div>

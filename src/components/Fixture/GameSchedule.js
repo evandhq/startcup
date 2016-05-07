@@ -6,7 +6,7 @@ export default class GameSchedule extends Component {
     return (<div className={styles.wrapper}>
       <div className={styles.items}>
         {
-          [1, 2, 3, 4, 5, 6].map((i, k) => <div className={styles.item} key={k}>
+          [1].map((i, k) => <div className={styles.item} key={k}>
             <div className={styles.team}>
               <img
                 className={styles.logo}
@@ -17,7 +17,7 @@ export default class GameSchedule extends Component {
               ایوند
             </div>
             <div className={styles.date}>
-              ۱۳۹۵/۳/۱۰ <i className="ion-calendar"/>
+              نامشخص <i className="ion-calendar"/>
             </div>
             <div className={styles.team}>
               <img
@@ -30,6 +30,13 @@ export default class GameSchedule extends Component {
             </div>
           </div>)
         }
+        <div>
+          <p style={{padding: 10, textAlign: 'center'}}>
+            <i className="ion-information-circled" />
+            { ' ' }
+            برنامهٔ بازی‌ها زمان اتمام ثبت نام و پر شدن ظرفیت اعلام خواهد شد
+          </p>
+        </div>
       </div>
     </div>);
   }

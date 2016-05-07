@@ -1,0 +1,13 @@
+@import './../../themes/_variables.scss';
+
+:local(.wrapper) {
+  background-color: #444;
+  text-align: center;
+  padding: 30px;
+  color: #FFFFFF;
+
+  a {
+    color: #DDD;
+
+  }
+}

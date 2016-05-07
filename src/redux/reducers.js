@@ -1,8 +1,10 @@
 import { combineReducers } from 'redux';
 import { routerReducer } from 'react-router-redux';
-import table from './reducers/table';
+import { reducer as formReducer } from 'redux-form';
+import table from './modules/table';
 
 export default combineReducers({
   table,
-  routing: routerReducer
+  routing: routerReducer,
+  form: formReducer
 });

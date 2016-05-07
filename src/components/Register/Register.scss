@@ -1,0 +1,80 @@
+@import './../../themes/_variables.scss';
+
+:local(.wrapper) {
+  border-top: 1px solid #E8E8E8;
+}
+
+:local(.container) {
+  lost-center: $container-width;
+  lost-utility: clearfix;
+  padding: 30px 0;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+
+.formGroup {
+  margin: 20px 0;
+
+  .label {
+    display: flex;
+    lost-utility: clearfix;
+
+    span {
+      lost-column: 1/4 0 0 flex;
+      line-height: 40px;
+    }
+
+    .input {
+      lost-column: 3/4 0 0 flex;
+      border: 1px solid #EEEEEE;
+      display: block;
+      line-height: 40px;
+      padding: 0 10px;
+      font-size: 1em;
+    }
+  }
+}
+
+@define-mixin btn $bg-color {
+  color: #ffffff;
+  padding: 10px;
+  display: inline-block;
+  border: none;
+  font-family: Parastoo;
+  font-size: 1em;
+  cursor: pointer;
+  background-color: $bg-color;
+
+  &:hover {
+    background-color: color($bg-color w(30%));
+  }
+
+  &, &:hover {
+    transition: background-color .3s ease;
+  }
+}
+
+.playersHeader {
+  lost-utility: clearfix;
+
+  span {
+    line-height: 47px;
+  }
+}
+
+:local(.addPlayerButton) {
+  @mixin btn $btn-add-player-bg;
+  float: left;
+}
+
+:local(.removePlayerButton) {
+  @mixin btn $btn-remove-player-bg;
+}
+
+.submitForm {
+  float: left;
+  @mixin btn $btn-submit-team-bg;
+}
