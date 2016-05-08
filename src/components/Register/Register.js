@@ -51,6 +51,7 @@ export default class Register extends Component {
 
     return (<form action="#" onSubmit={handleSubmit(this.handleSubmit)}>
       <h2>تیم خود را ثبت نام کنید!</h2>
+      <p>از طریق این فرم یک <strong>پیش‌ثبت‌نام</strong> انجام می‌دید و بعدا با شما تماس خواهیم گرفت.</p>
       <div className={styles.formGroup}>
         <label className={styles.label}>
           <span>نام استارتاپ</span>

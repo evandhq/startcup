@@ -14,9 +14,17 @@ export default class Html extends Component {
 
     return (<html>
     <head>
-      <meta charset="utf-8" data-reactid=".10txbw6ccg0.0.0"/>
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" data-reactid=".10txbw6ccg0.0.1"/>
-      <meta name="viewport" content="width=device-width, initial-scale=1" data-reactid=".10txbw6ccg0.0.2"/>
+      <meta charset="utf-8"/>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1"/>
+      <meta property="twitter:card" content="summary"/>
+      <meta property="twitter:site" content="@startcup_ir"/>
+      <meta property="twitter:creator" content="@startcup_ir"/>
+      <meta property="twitter:title" content="استارت‌کاپ"/>
+      <meta property="twitter:description" content="جام فوتسال بین استارتاپ‌ها"/>
+      <meta property="twitter:image" content="/logo-social.jpg"/>
+      <meta property="twitter:image:width" content="200"/>
+      <meta property="twitter:image:height" content="200"/>
       <title>استارت‌کاپ</title>
       { styles.map((style, key) => <link key={key} rel="stylesheet" href={style}/>) }
     </head>
