@@ -55,25 +55,25 @@ export default class Register extends Component {
       <div className={styles.formGroup}>
         <label className={styles.label}>
           <span>نام استارتاپ</span>
-          <input type="text" {...name} className={styles.input}/>
+          <input required="required" type="text" {...name} className={styles.input}/>
         </label>
       </div>
       <div className={styles.formGroup}>
         <label className={styles.label}>
           <span>آدرس وب‌سایت</span>
-          <input type="text" {...url} className={styles.input}/>
+          <input required="required" type="text" {...url} className={styles.input}/>
         </label>
       </div>
       <div className={styles.formGroup}>
         <label className={styles.label}>
           <span>شماره موبایل مسئول تیم</span>
-          <input type="text" {...mobile} className={styles.input}/>
+          <input required="required" type="text" {...mobile} className={styles.input}/>
         </label>
       </div>
       <div className={styles.formGroup}>
         <label className={styles.label}>
           <span>ایمیل مسئول تیم</span>
-          <input type="email" {...email} className={styles.input}/>
+          <input required="required" type="email" {...email} className={styles.input}/>
         </label>
       </div>
       <div className={styles.formGroup}>
