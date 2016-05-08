@@ -6,7 +6,7 @@ export default class Navbar extends Component {
     return (<header className={styles.wrapper}>
       <div className={styles.container}>
         <div className={styles.logo}>
-          <img src={require('images/logo.png')} alt="Startcup"/>
+          <img src={require('images/logo-navbar.png')} alt="Startcup"/>
         </div>
         <nav className={styles.nav}>
           <ul>

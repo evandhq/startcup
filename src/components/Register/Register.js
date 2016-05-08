@@ -9,6 +9,8 @@ import styles from './Register.scss';
     'name',
     'url',
     'logo',
+    'email',
+    'mobile',
     'players[].name',
     'players[].email',
     'players[].mobile'
@@ -45,7 +47,7 @@ export default class Register extends Component {
   };
 
   renderForm() {
-    const { fields: { name, url, logo, players }, handleSubmit } = this.props;
+    const { fields: { name, url, logo, players, mobile, email }, handleSubmit } = this.props;
 
     return (<form action="#" onSubmit={handleSubmit(this.handleSubmit)}>
       <h2>تیم خود را ثبت نام کنید!</h2>
@@ -63,20 +65,37 @@ export default class Register extends Component {
       </div>
       <div className={styles.formGroup}>
         <label className={styles.label}>
+          <span>شماره موبایل مسئول تیم</span>
+          <input type="text" {...mobile} className={styles.input}/>
+        </label>
+      </div>
+      <div className={styles.formGroup}>
+        <label className={styles.label}>
+          <span>ایمیل مسئول تیم</span>
+          <input type="email" {...email} className={styles.input}/>
+        </label>
+      </div>
+      <div className={styles.formGroup}>
+        <label className={styles.label}>
           <span>URL لوگو (ترجیحا مربعی)</span>
           <input type="text" {...logo} className={styles.input}/>
         </label>
       </div>
 
-      <h3 className={styles.playersHeader}>
-        <span>بازیکنان</span>
-        <button type="button" className={styles.addPlayerButton} onClick={() => players.addField()}>
-          <i className="ion-person-add"/> افزودن بازیکن
-        </button>
-      </h3>
+      {
+        /*
+        *
+         <h3 className={styles.playersHeader}>
+         <span>بازیکنان</span>
+         <button type="button" className={styles.addPlayerButton} onClick={() => players.addField()}>
+         <i className="ion-person-add"/> افزودن بازیکن
+         </button>
+         </h3>
+         */
+      }
 
       {
-        players.map((child, index) =>
+      /*  players.map((child, index) =>
           <div key={index} className={styles.player}>
             <div className={styles.formGroup}>
               <label className={styles.label}>
@@ -105,7 +124,7 @@ export default class Register extends Component {
               <i className="ion-trash-a"/> حذف
             </button>
           </div>
-        )
+        )*/
       }
 
       <button className={styles.submitForm} type="submit">

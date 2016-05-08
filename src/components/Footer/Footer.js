@@ -4,11 +4,8 @@ import styles from './Footer.scss';
 export default class Footer extends Component {
   render() {
     return (<footer className={styles.wrapper}>
-      این جام با همکاری
-      <a href="https://evand.ir"> ایوند </a>
-      برگزار می‌شه و این وب‌سایت خسته و داغون هم توسط
-      <a href="https://github.com/mohebifar"> محمد </a>
-      ساخته شده.
+      این جام با همکاری <a href="https://evand.ir">ایوند</a> برگزار می‌شود.
+      این وب‌سایت تحت مجوز MIT <a href="https://github.com/mohebifar/startcup">منتشر شده‌است. </a>
     </footer>);
   }
 }

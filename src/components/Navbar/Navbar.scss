@@ -19,10 +19,6 @@
 :local(.logo) {
   text-align: center;
   float: left;
-
-  img {
-    height: 40px;
-  }
 }
 
 :local(.nav) {
@@ -42,7 +38,6 @@
 
       a {
         color: #333;
-        font-weight: bold;
         line-height: 40px;
       }
     }

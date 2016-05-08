@@ -8,6 +8,12 @@
 
   a {
     color: #DDD;
+    display: inline-block;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.24);
 
+    &:hover {
+      transition: border-bottom .3s ease;
+      border-bottom-color: transparent;
+    }
   }
 }
