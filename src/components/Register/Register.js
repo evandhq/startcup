@@ -84,7 +84,7 @@ export default class Register extends Component {
 
       {
         /*
-        *
+         *
          <h3 className={styles.playersHeader}>
          <span>بازیکنان</span>
          <button type="button" className={styles.addPlayerButton} onClick={() => players.addField()}>
@@ -95,41 +95,47 @@ export default class Register extends Component {
       }
 
       {
-      /*  players.map((child, index) =>
-          <div key={index} className={styles.player}>
-            <div className={styles.formGroup}>
-              <label className={styles.label}>
-                <span>نام بازیکن</span>
-                <input type="text" {...child.name} className={styles.input}/>
-              </label>
-            </div>
-            <div className={styles.formGroup}>
-              <label className={styles.label}>
-                <span>ایمیل</span>
-                <input type="email" {...child.email} className={styles.input}/>
-              </label>
-            </div>
-            <div className={styles.formGroup}>
-              <label className={styles.label}>
-                <span>شماره موبایل</span>
-                <input type="text" {...child.mobile} className={styles.input}/>
-              </label>
-            </div>
+        /*  players.map((child, index) =>
+         <div key={index} className={styles.player}>
+         <div className={styles.formGroup}>
+         <label className={styles.label}>
+         <span>نام بازیکن</span>
+         <input type="text" {...child.name} className={styles.input}/>
+         </label>
+         </div>
+         <div className={styles.formGroup}>
+         <label className={styles.label}>
+         <span>ایمیل</span>
+         <input type="email" {...child.email} className={styles.input}/>
+         </label>
+         </div>
+         <div className={styles.formGroup}>
+         <label className={styles.label}>
+         <span>شماره موبایل</span>
+         <input type="text" {...child.mobile} className={styles.input}/>
+         </label>
+         </div>
 
-            <button
-              type="button"
-              className={styles.removePlayerButton}
-              onClick={() => {players.removeField(index);}}
-            >
-              <i className="ion-trash-a"/> حذف
-            </button>
-          </div>
-        )*/
+         <button
+         type="button"
+         className={styles.removePlayerButton}
+         onClick={() => {players.removeField(index);}}
+         >
+         <i className="ion-trash-a"/> حذف
+         </button>
+         </div>
+         )*/
       }
 
       <button className={styles.submitForm} type="submit">
         <i className="ion-paper-airplane"/> ثبت تیم
       </button>
+
+      <div>
+        <a href="https://telegram.me/startcup" className={styles.btnJoinTelegram}>
+          <i className="ion-paper-airplane"/> جهت دریافت اخبار، حتما در کانال تلگرام استارت‌کاپ عضو شوید.
+        </a>
+      </div>
     </form>);
   }
 

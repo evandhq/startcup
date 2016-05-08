@@ -66,15 +66,26 @@
 }
 
 :local(.addPlayerButton) {
-  @mixin btn $btn-add-player-bg;
+  @mixin btn
+  $btn-add-player-bg;
   float: left;
 }
 
 :local(.removePlayerButton) {
-  @mixin btn $btn-remove-player-bg;
+  @mixin btn
+  $btn-remove-player-bg;
 }
 
 .submitForm {
   float: left;
-  @mixin btn $btn-submit-team-bg;
+  @mixin btn
+  $btn-submit-team-bg;
+}
+
+.btnJoinTelegram {
+  border-bottom: 1px dashed #3498DB;
+  color: #3498DB;
+  line-height: 30px;
+  display: inline-block;
+  padding-top: 7px;
 }
