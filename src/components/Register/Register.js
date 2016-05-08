@@ -76,12 +76,6 @@ export default class Register extends Component {
           <input required="required" type="email" {...email} className={styles.input}/>
         </label>
       </div>
-      <div className={styles.formGroup}>
-        <label className={styles.label}>
-          <span>URL لوگو (ترجیحا مربعی)</span>
-          <input type="text" {...logo} className={styles.input}/>
-        </label>
-      </div>
 
       {
         /*
