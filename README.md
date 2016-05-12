@@ -9,4 +9,4 @@ npm run dev
 ```
 
 # Deployment
-This app is hosted on heroku and you can deploy the app as it is on every "heroku-ish" PaaS/service.
+This app is hosted on heroku and you can deploy the app on every "heroku-ish" PaaS/service.
